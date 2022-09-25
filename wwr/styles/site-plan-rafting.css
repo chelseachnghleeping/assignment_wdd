@@ -8,8 +8,8 @@ Fonts are separated by a & */
   /* change the values below to your colors from your palette */
   --primary-color: #DCEED1   ;
   --secondary-color: #AAC0AA ;
-  --accent1-color: #736372;
-  --accent2-color: #A18276;
+  --accent1-color: #d4c2d3;
+  --accent2-color: #FFFFFF;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Rock Salt";
@@ -22,8 +22,8 @@ Fonts are separated by a & */
   --paragraph-color-on-color: rgb(189, 25, 25); /* paragraph text on a colored background */ 
   --paragraph-background-color: #c3d4b3  ;
   --nav-link-color: #396E94;
-  --nav-background-color: #a8e7cf;
-  --nav-hover-link-color: rgb(149, 217, 90);
+  --nav-background-color: #d4c2d3;
+  --nav-hover-link-color: #FFFFFF;
   --nav-hover-background-color: #999c9e;
 }
 
