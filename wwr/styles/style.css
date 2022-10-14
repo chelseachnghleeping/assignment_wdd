@@ -3,24 +3,27 @@ nav a {
     color: #fcfbfb;
     text-align: center;
     padding: 35px;
-
 }
 
-img{
-    max-width: 1600px;
-}
-
-#background{
+#background{ 
     height: 725px;
-
 }
-.main-para{
-    width: 1600px;
-    margin: 0 auto;
+
+#content
+
+.icon {
+    width: 80px;
+}
+
+main section { 
     text-align: center;
 }
 
-body{
+.logo { 
+    width: 80px;
+}
+
+body {
     background-color: #fcfbfb;
     font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
@@ -28,38 +31,30 @@ body{
     padding: 0;
 }
 
-h2 {
-    margin: 0;
-}
-
-header{
+header {
     background-color: rgba(20, 30, 13, .7);
 }
 
-nav a:hover{
-    background-color: black;
-}
-
-nav a:hover{
+nav a:hover {
     background-color: black;
     color: #d9c2a3;
 }
 
-.icon{
-    width: 100px;
+.icon {
+    width: 80px;
 }
 
-nav a{
+nav a {
     text-align: center;
     color: #fcfbfb;
     text-decoration: none;
 }
 
-footer p{
+footer p {
     font-size: 1.2em;
 }
 
-footer p a:hover{
+footer p a:hover {
     text-decoration: underline;
 }
 
@@ -84,6 +79,7 @@ footer p a:hover{
 
 main section img {
     box-sizing: border-box;
+    text-align: center;
 }
 
 .msg {
