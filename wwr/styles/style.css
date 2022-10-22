@@ -9,8 +9,10 @@ nav a {
     height: 725px;
 }
 
-#content
-
+#content{
+    width: 1600px;
+    margin: 0 auto;
+}
 .icon {
     width: 80px;
 }
