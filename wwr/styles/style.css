@@ -186,10 +186,28 @@ footer {
 	transform: scale(1.1);
 }
 
-Rivers 
-h2 {
-	margin: 0;
+#rivercss{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
+#desolation, #grandcanyon, #salmon{
+	grid-column: 1/3;
+	margin-top: 40px;
+}
+.paragraph_header{
+	font-family: Bangers, Papyrus, Arial-Black;
+	color: #366e4b;
+	grid-column: 1/3;
+}
+.salmonriver, desolationriver, grandcanyon{
+	width: 450px;
+	height: 400px;
+	margin: 20px 20px 20px 20px;
+}
+.river_title{
+	grid-column: 1/2;
+}
+
 @media screen and (max-width: 900px) {
 	#hero,
 	.home-grid {
