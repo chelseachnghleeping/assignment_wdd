@@ -13,6 +13,7 @@ main section {
 .logo {
 	width: 80px;
 }
+
 body {
 	margin: 0;
 	padding: 0;
@@ -60,6 +61,28 @@ footer {
 footer .social img {
 	padding-top: 15px;
 }
+
+footer .social a {
+	text-decoration: none;
+	
+} 
+
+footer .social a img {
+	text-decoration: none; /* Remove underline  */
+	transition: all 0.1s ease-in-out;
+}  
+
+/* Add transition when hover */
+footer .social a:hover img {
+	transform: scale(1.1);
+}  
+
+/* Add transition when clicked */
+footer .social a:active img {
+	transform: scale(1);
+}  
+
+
 .home-title {
 	font-family: "Rock Salt", "Bradley Hand", sans-serif;
 	font-size: 2em;
@@ -206,6 +229,88 @@ footer {
 }
 .river_title{
 	grid-column: 1/2;
+}
+.form{
+	text-align: center;
+}
+
+.form-container{
+	border: 1px solid #ccc;
+	border-radius: 2rem;
+	width: 50%;
+	display: inline-block;
+	padding: 2rem;
+}
+#feedback{
+	background-color: antiquewhite;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 1em;
+	display: none;
+	font-weight: bold;
+}
+
+.formDesign{
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+
+.formDesign > li{
+	display: flex;
+	gap: 4rem;
+	justify-content: center;
+	margin: 0 0 4rem 0;
+}
+
+/* remove last <li> margin */
+.formDesign > li:last-child{
+	margin-bottom: 0;
+}
+
+.formDesign > li > label{
+	align-self: flex-start;
+}
+
+
+.form-input{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 1rem;
+	width: 36rem;
+}
+
+.btn-submit{
+	background-color: #6f7364;
+	padding: 1rem;
+	border-radius: 2rem;
+	border: none;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	transition: all .1s ease-in-out;
+	cursor: pointer;
+}
+
+.btn-submit:hover{
+	/* transform: scale(1.05); */
+	box-shadow: 0 1px 10px 0 rgb(0, 0, 0);
+}
+
+.btn-submit:active{
+	/* transform: scale(1); */
+	border: 2px solid #6f7364;
+}
+
+/* Move slightly left */
+textarea.form-input{
+	margin-left: -1rem;
+}
+
+.moveDown {
+	margin-top: 3em;
 }
 
 @media screen and (max-width: 900px) {
