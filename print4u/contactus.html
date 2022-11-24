@@ -1,107 +1,218 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Print4u | Contact Us</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/styles.css" />
+		<title>Print4u | Contact Us</title>
+	</head>
 
-<body>
-    <header>
-        <h1>Print4u</h1>
-        <div id="content">
-            <header>
-                <a id="logo_link" href="index.html">
-                    <img class="logo" src="image/print4u_logo.jpeg" alt="Print4u Logo" width="400px">
-                </a>
-    </header>
+	<body>
+		<header>
+			<div class="upperNav">
+				<div><b>Print4U</b></div>
+				<div>
+					<ul>
+						<li><a href="#">EN</a></li>
+						<li><a href="#">CN</a></li>
+						<li><a href="#">BM</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="aboutus.html">About</a>
-        <a href="contactus.html">Contact</a>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="aboutus.html">About Us</a
+			><a id="logo_link" href="index.html">
+				<img
+					class="logo"
+					src="image/print4u_logo.png"
+					alt="Print4u Logo"
+				/>
+			</a>
+			<a href="site-plan.html">Site Plan</a>
+			<a href="contactus.html">Contact Us</a>
+		</nav>
 
-    <form>
-        <input type="search" name="q" placeholder="Search">
-        <input type="submit" value="Go!">
-    </form>
-    </nav>
+		<div class="contact-hero">
+			<div>
+				<h1>Contact us</h1>
+				<p>Do not hesitate to contact us.</p>
+				<p>
+					We are here to provide you with more information and create
+					an effective solution to help you achieve your business
+					goals. Let's talk about the possibilities if a solution does
+					not exist. Give us a call to discuss your situation. We are
+					alays open to new ideas and challenges
+				</p>
+			</div>
+		</div>
 
-<main>
-   <address>
-    Print4u Sdn Bhd<br/>
-    No. 28a, Jalan Sri Krubong 3<br/>
-    Taman Sri Krubong<br/>
-    75250 Melaka, Malaysia<br/>
-    +60195380637<br/>
-    Email: <a href="mailto:chn22001@byui.edu">chn22001@byui.edu</a><br/>
-</address>
+		<main style="margin-top: 3rem">
+			<section>
+				<div class="contact-container">
+					<div>
+						<form
+							action="//submit.form"
+							id="ContactUs"
+							method="post"
+							onsubmit="return ValidateForm(this)"
+							;
+						>
+							<h4 style="font-size: 32px; margin-bottom: 1rem">
+								Enquiry Form
+								<small
+									style="
+										color: rgb(126, 126, 126);
+										font-weight: normal;
+										font-size: 12px;
+									"
+									>* - required fields</small
+								>
+							</h4>
+							<table>
+								<tr>
+									<td>
+										<label for="Name">Name*:</label>
+										<input
+											name="Name"
+											type="text"
+											maxlength="60"
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="PhoneNumber"
+											>Phone number:</label
+										>
+										<input
+											name="PhoneNumber"
+											type="text"
+											maxlength="43"
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="FromEmailAddress"
+											>Email address*:</label
+										>
+										<input
+											name="FromEmailAddress"
+											type="text"
+											maxlength="90"
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="Comments">Comments*:</label>
+										<textarea
+											name="Comments"
+											rows="7"
+											cols="40"
+										></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<button
+											name="skip_Submit"
+											type="submit"
+											value="Submit"
+										>
+											Send Message
+										</button>
+									</td>
+								</tr>
+							</table>
+						</form>
+					</div>
+					<div>
+						<div class="address">
+							<div>
+								<img src="./image/contact.png" width="100px" />
+							</div>
+							<address>
+								<b>Print4u Sdn Bhd</b><br />
+								No. 28a, Jalan Sri Krubong 3<br />
+								Taman Sri Krubong<br />
+								75250 Melaka, Malaysia<br />
+								+60195380637<br />
+								Email:
+								<a href="mailto:chn22001@byui.edu"
+									>chn22001@byui.edu</a
+								><br />
+							</address>
+						</div>
+						<br />
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63745.38489146975!2d101.43194134863278!3d3.071547599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc539e1df29dbd%3A0xc0bdf5c9c7dfc3bd!2siPrint4U!5e0!3m2!1sen!2smy!4v1669295975138!5m2!1sen!2smy"
+							width="400"
+							height="350"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
+			</section>
+		</main>
 
-    <h2>Contact Us</h2>
-
-        <form action="//submit.form" id="ContactUs" method="post" onsubmit="return ValidateForm(this)";>
-
-        <script type="text/javascript">
-            function ValidateForm(frm) {
-                if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
-                if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
-                if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
-                if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
-                return true;
-            }
-                </script>
-                <table style="width:550px;border:0;" cellpadding="8" cellspacing="0"> <tr> <td>
-        
-                <label for="Name">Name*:</label> </td> <td>
-        
-                <input name="Name" type="text" maxlength="60" style="width:250px;" /> </td> </tr> <tr> <td>
-        
-                <label for="PhoneNumber">Phone number:</label> </td> <td>
-        
-                <input name="PhoneNumber" type="text" maxlength="43" style="width:250px;" /> </td> </tr> <tr> <td>
-        
-                <label for="FromEmailAddress">Email address*:</label> </td> <td>
-        
-                <input name="FromEmailAddress" type="text" maxlength="90" style="width:250px;" /> </td> </tr> <tr> <td>
-        
-                <label for="Comments">Comments*:</label> </td> <td>
-        
-                <textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea> </td> </tr> <tr> <td>
-        
-        * - required fields
-        
-        </td> <td>
-                <div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="web forms">forms</a></div>
-        
-                <input name="skip_Submit" type="submit" value="Submit" />
-        
-                <script src="https://www.100forms.com/js/FORMKEY:7GB64WPHHJ8M" type="text/javascript"></script>
-        </td> </tr>
-        
-    </table>
-    </form>
-
-</main>
-</body>
-
-    <footer>
-        <p>Print4u &copy; 2022 - Chngh Lee Ping</p>
-        <p><a href="site-plan.html">Site Plan</a></p>
-        <p><a href="contactus.html">Contact Us</a></p>
-        <div class="social">
-            <a href="https://facebook.com">    
-                <img src="image/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com">
-                <img src="image/twitter.png" alt="twitter icon">  
-            </a>
-            <a href="https://instagram.com">
-                <img src="image/instagram.png" alt="instagram icon">
-            </a>
-        </div>
-    </footer>
-</body>
+		<footer>
+			<div class="footer-container">
+				<div>
+					<p>Print4u &copy; 2022 - Chngh Lee Ping</p>
+				</div>
+				<div>
+					<div class="social">
+						<a href="https://facebook.com">
+							<img src="image/facebook.png" alt="fb icon" />
+						</a>
+						<a href="https://twitter.com">
+							<img src="image/twitter.png" alt="twitter icon" />
+						</a>
+						<a href="https://instagram.com">
+							<img
+								src="image/instagram.png"
+								alt="instagram icon"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		function ValidateForm(frm) {
+			if (frm.Name.value == "") {
+				alert("Name is required.")
+				frm.Name.focus()
+				return false
+			}
+			if (frm.FromEmailAddress.value == "") {
+				alert("Email address is required.")
+				frm.FromEmailAddress.focus()
+				return false
+			}
+			if (
+				frm.FromEmailAddress.value.indexOf("@") < 1 ||
+				frm.FromEmailAddress.value.indexOf(".") < 1
+			) {
+				alert("Please enter a valid email address.")
+				frm.FromEmailAddress.focus()
+				return false
+			}
+			if (frm.Comments.value == "") {
+				alert("Please enter comments or questions.")
+				frm.Comments.focus()
+				return false
+			}
+			return true
+		}
+	</script>
 </html>
