@@ -1,11 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap");
 :root {
 	/* change the values below to your colors from your palette */
-	--primary-color: #863a6f;
-	--secondary-color: #975c8d;
-	--accent1-color: #d989b5;
-	--accent2-color: #ffadbc;
+	--primary-color: #5e376d;
+	--secondary-color: #bd97cb;
+	--accent1-color: #f3eac0;
+	--accent2-color: #747080;
+	--heading-font: "Roboto", sans-serif;
+	--paragraph-font: "Lobster", cursive;
+
 	--nav-link-color: #5e376d;
+	--nav-background-color: #bd97cb;
+	--nav-hover-link-color: #f3eac0;
+	--nav-hover-background-color: #747080;
 }
 
 * {
@@ -15,14 +22,19 @@
 
 html,
 body {
-	font-family: "Work Sans", sans-serif;
+	font-family: var(--paragraph-font);
+}
+
+.heading {
+	font-family: var(--heading-font);
 }
 
 .upperNav {
 	display: flex;
 	flex-direction: row;
 	padding: 0.2rem;
-    background-color: #f899ab;
+	background-color: var(--nav-background-color);
+	font-family: var(--heading-font);
 }
 
 .upperNav div {
@@ -57,21 +69,38 @@ nav {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 2rem;
-	background-color: var(--accent2-color);
+	background-color: var(--nav-background-color);
+	font-family: var(--heading-font);
 }
 
-nav a {
+nav div {
 	flex: 1 1 0%;
 	font-size: 1.1rem;
 	text-align: center;
-	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+nav a {
+	padding: 1rem 1.5rem 1rem 1.5rem;
+	border-radius: 1rem;
+	transition: all .2s ease-in-out;
 	color: var(--nav-link-color);
+	text-decoration: none;
+}
+
+nav a#logo_link {
+	padding: 1rem 1.5rem 1rem 1.5rem;
+	border-radius: 1rem;
+}
+
+nav a#logo_link:hover {
+	background-color: transparent !important;
 }
 
 nav a:hover {
-	text-decoration: underline;
+	background-color: var(--nav-hover-background-color);
+	color: var(--nav-hover-link-color);
 }
 
 main {
@@ -81,20 +110,31 @@ main {
 .landing-content {
 	display: flex;
 	gap: 6rem;
-    padding: 2rem 3rem 0 3rem;
-    align-items: center;
+	padding: 2rem 3rem 0 3rem;
+	align-items: center;
 }
 
 .landing-content div,
 .footer-container div:first-child,
-.footer-container div:last-child {
+.footer-container div:first-child,
+.about-container div:last-child,
+.about-container div:first-child {
 	flex: 1 1 0%;
 }
 
-.landing-content div:first-child img {
-	width: 100%;
-	border-radius: 1rem;
-	box-shadow: 0 0 20px 5px #ccc;
+.about-container {
+	display: flex;
+	gap: 6rem;
+}
+
+.about-container h1,
+h2,
+h3 {
+	color: var(--primary-color);
+}
+
+.landing-content div:first-child {
+	text-align: center;
 }
 
 .landing-content div:last-child h2 {
@@ -110,14 +150,15 @@ main {
 }
 
 footer {
-	background-color: var(--accent2-color);
+	background-color: var(--nav-background-color);
 	margin-top: 3rem;
+	font-family: var(--heading-font);
 }
 
 .footer-container {
 	display: flex;
 	padding: 1rem;
-	color: #5e376d !important;
+	color: var(--primary-color) !important;
 	align-items: center;
 }
 
@@ -163,8 +204,7 @@ footer {
 	text-align: center;
 }
 
-.contact-hero {
-	background-image: url("../image/contact_us.jpg");
+.hero {
 	width: 100%;
 	height: 350px;
 	margin-top: -2rem;
@@ -172,7 +212,22 @@ footer {
 	position: relative;
 }
 
-.contact-hero div {
+.homepage-hero {
+	background-image: url("../image/pink_roses.jpg");
+}
+
+.contact-hero {
+	background-image: url("../image/contact_us.jpg");
+}
+
+.about-hero {
+	background-image: url("../image/about_us.jpg");
+	background-position: center;
+}
+
+.contact-hero div,
+.about-hero div,
+.homepage-hero div {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -181,12 +236,16 @@ footer {
 	text-shadow: 1px 2px #000;
 }
 
-.contact-hero div h1 {
+.contact-hero div h1,
+.about-hero div h1,
+.homepage-hero div h1 {
 	text-align: center;
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
-.contact-hero div p {
+.contact-hero div p,
+.about-hero div p,
+.homepage-hero div p {
 	text-align: center;
 }
 
@@ -249,13 +308,12 @@ address {
 	flex: 1 1 auto;
 }
 
-
 .site-plan-hero {
 	background-image: url("../image/pink_roses.jpg");
 	width: 100%;
 	height: 350px;
 	margin-top: -2rem;
-	background-size:cover;
+	background-size: cover;
 	position: relative;
 }
 
@@ -270,7 +328,7 @@ address {
 
 .site-plan-hero div h1 {
 	text-align: center;
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .site-plan-hero div p {
