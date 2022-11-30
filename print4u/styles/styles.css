@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
 :root {
 	/* change the values below to your colors from your palette */
 	--primary-color: #5e376d;
@@ -7,7 +7,7 @@
 	--accent1-color: #f3eac0;
 	--accent2-color: #747080;
 	--heading-font: "Roboto", sans-serif;
-	--paragraph-font: "Lobster", cursive;
+	--paragraph-font: "Montserrat", sans-serif;
 
 	--nav-link-color: #5e376d;
 	--nav-background-color: #bd97cb;
@@ -84,7 +84,7 @@ nav div {
 nav a {
 	padding: 1rem 1.5rem 1rem 1.5rem;
 	border-radius: 1rem;
-	transition: all .2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	color: var(--nav-link-color);
 	text-decoration: none;
 }
@@ -135,6 +135,7 @@ h3 {
 
 .landing-content div:first-child {
 	text-align: center;
+	align-self: flex-start;
 }
 
 .landing-content div:last-child h2 {
@@ -198,10 +199,18 @@ footer {
 	border-radius: 15rem;
 }
 
-.founders-container > div > div:last-child p:first-child {
+.founders-container > div > div:last-child > p:first-child {
 	font-weight: bold;
 	font-size: 24px;
 	text-align: center;
+}
+
+.founders-container > div > div:last-child > p {
+	text-align: center;
+}
+
+.founders-container > div > div:last-child > p:last-child{
+	margin-top: 1rem;
 }
 
 .hero {
@@ -280,7 +289,7 @@ textarea {
 	width: 100%;
 }
 
-.contact-container form button {
+.contact-container form button, .button {
 	background-color: var(--primary-color);
 	color: #fff;
 	padding: 0.5rem;
@@ -291,7 +300,7 @@ textarea {
 	font-weight: bold;
 }
 
-.contact-container form button:hover {
+.contact-container form button:hover, .button:hover {
 	background-color: #fff;
 	color: var(--primary-color);
 }
