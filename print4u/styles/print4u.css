@@ -1,184 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
-
-#background {
-	height: 725px;
-}
-#content {
-	width: 100%;
-	margin: 0 auto;
-}
-main section {
-	text-align: center;
-}
-.logo {
-	width: 80px;
-}
-
+/* For Home Page */
 body {
-	margin: 0;
-	padding: 0;
-	background-color: #EBC1EC;
-	font-family: Roboto, Montserrat, sans-serif;
-	font-size: 22px;
-}
-h2 {
-	margin: 0;
-}
-header {
-	display: grid;
-	grid-template-columns: 150px auto;
-	background-color: #bd97cb;
-}
-nav {
-	display: flex;
-	justify-content: space-around;
-}
-nav a {
-	text-decoration: none;
-	color: #fcfbfb;
-	text-align: center;
-	padding: 35px;
-}
-nav a:hover {
-	background-color: rgb(204, 213, 219);
-	color: #f3eac0;
-}
-#logo_link {
-	padding-top: 5px;
-	justify-self: center;
-	align-self: center;
-}
-.icon {
-	width: 80px;
-    height: 80px;
-	margin-top: 10px;
-}
-footer {
-	font-size: 1.2em;
-	padding: 25px 50px;
-	margin-top: 200px;
-}
-footer .social img {
-	padding-top: 15px;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Montserrat, sans-serif;
+    font-size: 22px;
 }
 
-footer .social a {
-	text-decoration: none;
-	
-} 
-
-footer .social a img {
-	text-decoration: none; /* Remove underline  */
-	transition: all 0.1s ease-in-out;
-}  
-
-/* Add transition when hover */
-footer .social a:hover img {
-	transform: scale(1.1);
-}  
-
-/* Add transition when clicked */
-footer .social a:active img {
-	transform: scale(1);
-}  
-
-.home-title {
-	font-family: "Roboto", "Montserrat", sans-serif;
-	font-size: 2em;
-	margin-top: 10px;
-    color: #d9c2a3 !important;
+/* For About Us page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 22px;
 }
 
-.card-img {
-	border: 10px solid #d9c2a3;
-}
-main section img {
-	box-sizing: border-box;
+main section {
+    text-align: center;
 }
 
-#hero {
-	display: grid;
-	grid-template-columns: 1fr 3fr 1fr;
-	margin-top: -100px;
-}
-#hero-img {
-	width: 100%;
-}
-#hero-box {
-	grid-column: 1/4;
-	grid-row: 1/3;
-	z-index: -1;
-}
-#hero-msg {
-	width: 100%;
-	grid-column: 2/3;
-	grid-row: 1/2;
-	margin-top: 170px;
-	text-align: center;
-}
-#hero-msg h1 {
-	color: white;
-	text-align: center;
-}
-#hero-msg h4 {
-	color: white;
-	text-align: center;
-}
-#home-grid {
-	display: grid;
-}
-
-#background {
-	background: #d9c2a3;
-	grid-column: 1/11;
-	grid-row: 4/9;
-    margin-top: 8rem;
-}
-
-@media screen and (max-width: 900px) {
-	#hero,
-	.home-grid {
-		display: block;
-		height: auto;
-	}
-	nav,
-	footer {
-		flex-direction: column;
-	}
-	nav a {
-		display: block;
-		padding: 15px;
-	}
-	#hero {
-		margin-top: 0;
-	}
-	#hero-msg {
-		margin-top: 0;
-	}
-	#hero-msg h4 {
-		display: none;
-	}
-	.home-title {
-		font-size: 25px;
-		color: #6f7364;
-	}
-	.rivers-card,
-	.camping-card,
-	.rapids-card {
-		margin: 50px auto;
-		width: 60%;
-	}
-	#background {
-		display: none;
-	}
-	.mountains,
-	.msg {
-		width: 80%;
-		display: block;
-		margin: 0 auto;
-	}
-	footer {
-		margin-top: 25px;
-	}
+/* For Contacu Us */
+h1 heading {
+    text-align: justify;
+    font-family: Roboto, Montserrat, sans-serif;
 }
